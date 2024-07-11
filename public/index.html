@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        form { display: flex; flex-direction: column; }
+        input, textarea { margin-bottom: 10px; padding: 5px; }
+        button { padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Resume Generator</h1>
+    <form id="resumeForm">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+        <textarea id="education" placeholder="Education" required></textarea>
+        <textarea id="experience" placeholder="Experience" required></textarea>
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <h2>View Resumes</h2>
+    <div id="resumeList"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
